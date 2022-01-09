@@ -39,7 +39,7 @@ class Triangle
       @sides.each_with_index do |s, i|
         temp_sides = @sides.dup
         temp_sides.delete_at(i)
-        other_sides = temp_sides
+        other_sides = temp_sides 
         return false unless other_sides.sum > s
       end
       true 
